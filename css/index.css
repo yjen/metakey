@@ -1,0 +1,62 @@
+html{
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: url(/images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.button-holder {
+  margin-top: 2rem;
+}
+
+@media (max-width: 550px) {
+  .button-holder {
+    margin-top: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.button-holder {
+  position: relative;
+  text-align: center;
+}
+
+.circle-button {
+  display: block;
+  width: 100%;
+  padding-top:100%;
+  border-radius:50%;
+  text-align: center;
+  background-color: #6474BA;
+}
+
+.button-text {
+  position: absolute;
+  top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  line-height: 0;
+  pointer-events: none;
+  color: white;
+}
+
+.u-vertical-align {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.u-center {
+  text-align: center;
+}

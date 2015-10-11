@@ -1,0 +1,36 @@
+<head>
+  <title>metakey</title>
+</head>
+
+<body>
+  <div class="container u-vertical-align">
+    <div class="row">
+      <div class="twelve columns u-center">
+        <h1>Welcome Home.</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns u-center">
+        <h3>Current Status: Closed</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns offset-by-four button-holder">
+        <div class="button-holder">
+          <a href="#" class="circle-button"></a>
+          <h3 class="button-text">Open</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<template name="task">
+  <li class="{{#if checked}}checked{{/if}}">
+    <button class="delete">&times;</button>
+
+    <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+
+    <span class="text"><strong>{{username}}</strong> - {{text}} {{createdAt}}</span>
+  </li>
+</template>
