@@ -4,7 +4,6 @@ html{
 
 body {
   height: 100%;
-  background: url(/images/background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -32,9 +31,8 @@ body {
   display: block;
   width: 100%;
   padding-top:100%;
-  border-radius:50%;
   text-align: center;
-  background-color: #6474BA;
+  outline: black solid 2px;
 }
 
 .button-text {
@@ -46,7 +44,7 @@ body {
   right: 0;
   line-height: 0;
   pointer-events: none;
-  color: white;
+  color: black;
 }
 
 .u-vertical-align {
