@@ -2,7 +2,7 @@ Status = new Mongo.Collection("status");
 
 if (Meteor.isClient) {
   Template.Home.events({
-    "click .circle-button": function () {
+    "click .square-button": function () {
       var id = Status.find().fetch()[0]._id;
       Status.update(id, {
         $set: { releasing: true, time: new Date() }
