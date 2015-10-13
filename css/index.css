@@ -33,6 +33,16 @@ body {
   padding-top:100%;
   text-align: center;
   outline: black solid 2px;
+  background: none;
+  border: none;
+}
+
+.square-button:hover {
+  outline: #efefef solid 2px;
+}
+
+.square-button:active:hover {
+  background: #efefef;
 }
 
 .button-text {
